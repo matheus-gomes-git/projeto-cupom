@@ -4,7 +4,7 @@
 
 Este projeto é sincronizado automaticamente com o GitHub.
 
-- **Repositório:** https://github.com/Matheusgomes062/projeto-cupom
+- **Repositório:** https://github.com/matheus-gomes-git/projeto-cupom
 - **Branch principal:** main
 
 ## Regras de Sincronização Automática

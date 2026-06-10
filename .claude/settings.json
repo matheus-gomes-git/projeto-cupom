@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd \"d:\\Projeto pessoal\\Projeto Cupom\" && git add -A && git diff --cached --quiet || git commit -m \"auto: atualização automática via Claude Code\" && git push origin main"
+            "command": "cd /d \"d:\\Projeto pessoal\\Projeto Cupom\" && git add -A && git diff --cached --quiet || git commit -m \"auto: atualização automática via Claude Code\" && git push origin main"
           }
         ]
       }
