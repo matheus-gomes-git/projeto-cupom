@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comparador de Preços</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <span class="logo">🏷️</span>
+    <div class="header-text">
+      <h1>Comparador de Preços</h1>
+      <p id="product-name" class="product-name">Detectando produto...</p>
+    </div>
+    <button id="refresh-btn" class="refresh-btn" title="Buscar novamente">↻</button>
+  </header>
+
+  <main id="main">
+    <div id="state-detecting" class="state">
+      <div class="spinner"></div>
+      <p>Identificando produto na página...</p>
+    </div>
+
+    <div id="state-no-product" class="state hidden">
+      <p class="icon-big">🔍</p>
+      <p>Nenhum produto detectado nesta página.</p>
+      <p class="hint">Abra a extensão em uma página de produto.</p>
+    </div>
+
+    <div id="state-searching" class="state hidden">
+      <div id="store-list-loading"></div>
+    </div>
+
+    <div id="state-results" class="state hidden">
+      <div id="currency-toggle" class="currency-toggle hidden">
+        <span>Mostrar preços em:</span>
+        <button class="active" data-currency="BRL">R$</button>
+        <button data-currency="USD">USD</button>
+      </div>
+      <div id="results-list"></div>
+    </div>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
